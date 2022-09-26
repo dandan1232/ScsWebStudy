@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言界面</title>
+</head>
+<style>
+    .liuyan {
+        background: #B0BEC5;
+    }
+</style>
+<form>
+
+    <body>
+        <table border="1" width="600px" class="liuyan">
+
+            <tr>
+                <td colspan="2">发表留言</td>
+            </tr>
+
+
+
+            <tr>
+                <td>姓名</td>
+                <td>
+                    <input type="text" size="20" name="name">
+                </td>
+            </tr>
+
+
+
+            <td>电子邮件</td>
+            <td>
+                <input type="text" size="40" name="email">
+            </td>
+
+            <tr>
+                <td>分类</td>
+                <td>科技工作者建言
+                    <input type="radio" name="sercet" value="no" />不保密
+                    <input type="radio" name="sercet" value="yes" />保密
+                    &nbsp&nbsp留言类型：
+                    <select name="type" id="">
+                        <option value="ts">投诉</option>
+                        <option value="ts">建议</option>
+                        <option value="ts">反馈</option>
+                    </select>
+                </td>
+            </tr>
+</form>
+
+<form name="liuyan">
+    <tr>
+        <td>留言</td>
+        <td>
+            <textarea name="info" id="" cols="60" rows="10"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">注：如果您的留言不便公开，请选择“保密”选项，提交后可凭系统反馈给您的留言编号,查询密码
+            和您的姓名查询回复
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" style="padding-left: 38%;">
+            <input type="submit" name="submit" value="提交" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" name="reset" id="" value="清空" />
+        </td>
+    </tr>
+
+
+
+    <tr>
+        <td colspan="2">
+            <ul type="disc">
+                <li>请遵守国家有关法律和法规，尊重网上道德，承担一切因您的行为而直接或间接引起的法律责任。</li>
+                <li>本网站拥有管理笔名和留言的一切权力。</li>
+            </ul>
+        </td>
+    </tr>
+</form>
+</table>
+
+
+</body>
+
+</html>

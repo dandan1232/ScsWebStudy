@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册页面</title>
+    <style>
+        /*输入表单样式*/
+        input {
+            width: 180px;
+            height: 20px;
+            margin: 5px;
+            font-size: 16px;
+            font-family: "微软雅黑 Light";
+        }
+
+        /*注册面板样式*/
+        #container {
+            background-color: white;
+            color: #2289F0;
+            padding: 15px;
+            margin: 100px auto 0px;
+            /*上边距100px；左右为auto；下边距0px*/
+            width: 600px;
+            text-align: center;
+            font-family: "微软雅黑 Light";
+            box-shadow: 10px 10px 15px black;
+        }
+
+        /*按钮样式*/
+        button {
+            width: 120px;
+            height: 40px;
+            background-color: #2289F0;
+            border: 0px;
+            color: white;
+            margin: 10px;
+            font-size: 18px;
+            font-family: "微软雅黑 Light";
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- 页面标题 -->
+        <h1>用户注册页面</h1>
+        <!-- 水平线 -->
+        <hr />
+        <!-- 表单 -->
+        <form action="URL" method="post" autocomplete="on">
+
+            <label> 用户名：
+                <input type="text" placeholder="请输入用户名" autofocus="autofocus" required="required" />
+            </label>
+            <br>
+            <label> 密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                <input type="password" placeholder="请输入密码" autofocus="autofocus" required="required" />
+            </label>
+            <br>
+            <label> 确&nbsp;&nbsp;&nbsp;&nbsp;认：
+                <input type="password" placeholder="请再次输入密码" autofocus="autofocus" required="required" />
+            </label>
+            <br>
+            <label> 姓&nbsp;&nbsp;&nbsp;&nbsp;名：
+                <input type="text" placeholder="请输入真实姓名" autofocus="autofocus" required="required" />
+            </label>
+            <br>
+            <label> 邮&nbsp;&nbsp;&nbsp;&nbsp;箱：
+                <input type="email" placeholder="请输入电子邮箱" autofocus="autofocus" required="required" />
+            </label>
+            <br>
+            <button type="submit">注册提交</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
