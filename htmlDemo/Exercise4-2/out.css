@@ -1,0 +1,10 @@
+.int_css {
+	border-width: 2px;
+	border-style: dotted;
+	text-align: center;
+	color: green;
+}
+
+#h1_css {
+	font-size: 28px;
+}
