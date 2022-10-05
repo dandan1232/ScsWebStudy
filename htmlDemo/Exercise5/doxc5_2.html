@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体样式属性</title>
+    <style>
+        * {
+            color: #66BB6A;
+        }
+
+        h3 {
+            text-align: center;
+            color: #1B5E20;
+        }
+
+        .p1 {
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        #p2 {
+            font-weight: 600;
+            font-style: italic;
+            font-size: 28px;
+            line-height: 50px;
+            font-family: "幼圆";
+
+        }
+
+        #p3 {
+            font-style: italic;
+            font-weight: bolder;
+            font-variant: small-caps;
+            font-size: 24px;
+            line-height: 1.5em;
+            font-family: "黑体";
+
+        }
+
+        hr {
+            color: #FFA726;
+        }
+
+        .p4 {
+            letter-spacing: 2px;
+            line-height: 1em;
+            text-indent: 2em;
+        }
+
+        .p5 {
+            letter-spacing: 4px;
+            line-height: 1.5em;
+            text-align: 3em;
+        }
+
+        #p6 {
+            letter-spacing: 6px;
+            line-height: 2em;
+            text-align: 4em;
+            word-spacing: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+
+        <h3>设置字体改变、粗细、复合属性</h3>
+        <li>设置全局字体颜色为淡绿色</li>
+        <hr>
+        <p>正常显示</p>
+        <p style="font-weight: lighter;font-variant: normal;">显示的文字正常、较细</p>
+        <p class="p1">设置小型大写字母abhA、字体标准粗体</p>
+        <p id="p2">设置字体粗细度为600、斜体、大小28px、行高50px、字体幼圆</p>
+        <p id="p3">设置字体风格斜体、特粗、小型大写字母HTML、字号24px、行高1.5em、字体黑体</p>
+    </body>
+    <hr>
+
+    <body>
+        <h3>设置字符间距、行高及首行缩进</h3>
+        <hr>
+        <p class="p4">
+            [字符间距2px、行高1em、首行缩进2em]昨天上午，
+            南京国际博览中心金陵会议中心内欢声笑语，春意盎然，省委、省政府在这里举行春节团拜会。
+            省领导罗志军、李学勇、张连珍等与各界人士1000多人欢聚一堂，共迎传统新春佳节，向全省人民致以节日问候和美好祝福。
+        </p>
+        <p class="p5">
+            [字符间距4px、行高1.5em、首行缩进3em]昨天上午，南京国际博览中心金陵会议中心内欢声笑语，
+            春意盎然，省委、省政府在这里举行春节团拜会。省领导罗志军、李学勇、张连珍等与各界人士1000多人欢聚一堂，
+            共迎传统新春佳节，向全省人民致以节日问候和美好祝福。
+        </p>
+        <p id="p6">[字符间距6px、行高2em、首行缩进4em、单词间距10px]昨天上午，南京国际博览中心金陵会议中心内欢声笑语，
+            春意盎然，省委、省政府在这里举行春节团拜会。
+            Chinese leader Xi
+            Jinping has urged the Communist Party of China (CPC) to be more tolerant of criticism and receptive to the
+            views of non-communists.</p>
+    </body>
+</body>
+
+</html>
