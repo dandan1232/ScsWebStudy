@@ -1,0 +1,40 @@
+#all {
+    width: 50%;
+    background-color: burlywood;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Impact,serif';
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-family: '华文隶书';
+    font-size: 30px;
+}
+
+.p1 {
+    font-family: '华文楷体';
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.p2 {
+    font-size: 18px;
+}
+
+a:link {
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: brown;
+}

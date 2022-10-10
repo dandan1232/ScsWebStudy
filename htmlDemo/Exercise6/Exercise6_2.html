@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3文本阴影效果的应用</title>
+    <style>
+        div {
+            color: cornflowerblue;
+            font-weight: 700;
+            font-size: 24px;
+            font-family: "幼圆";
+        }
+
+        #a {
+            text-shadow: 5px 5px 10px #776205
+        }
+
+        #b {
+            text-shadow: 0 0 15px #0b8dd8;
+        }
+
+        #c {
+            text-shadow: -1px 0 rgb(160, 16, 16), 0 1px rgb(9, 19, 53),
+                1px 0 rgb(141, 120, 120), 0 -1px rgb(228, 10, 10);
+            color: rgb(27, 3, 3)
+        }
+
+        .d {
+            font-weight: bold;
+            background-color: #90CAF9;
+            color: #90CAF9
+        }
+
+        .b1 {
+            text-shadow: -1px -1px white, 1px 1px rgb(145, 16, 16)
+        }
+
+        .b2 {
+            text-shadow: 1px 1px white, -1px -1px rgb(235, 68, 68)
+        }
+    </style>
+</head>
+
+<body>
+    <h3>模糊阴影效果</h3>
+    <div id="a">
+        这是模糊阴影效果
+    </div>
+    <hr>
+    <h3>文字发光效果</h3>
+    <div id="b">
+        看我在发光
+    </div>
+    <hr>
+    <h3>文字描边效果</h3>
+    <div id="c">
+        看我描边大师
+    </div>
+    <hr>
+    <h3>凹凸纹理效果</h3>
+    <div class="d b1">
+        我是超酷的凸纹理
+    </div>
+    <div class="d b2">
+        我是超酷的凹纹理
+    </div>
+    <hr>
+</body>
+
+</html>
