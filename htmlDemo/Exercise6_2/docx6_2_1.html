@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS属性background的应用</title>
+    <style>
+        div {
+            width: 660px;
+        }
+
+        p {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+            background-color: silver;
+        }
+
+        #p1 {
+            background: silver url("../img/football.png") no-repeat left center;
+        }
+
+        #p2 {
+            background: silver url("../img/football.png") no-repeat center center;
+        }
+
+        #p3 {
+            background: silver url("../img/football.png") no-repeat right center;
+        }
+
+        #p4 {
+            background: silver url("../img/football.png") no-repeat 0% 100%;
+        }
+
+        #p5 {
+            background: silver url("../img/football.png") no-repeat 50% 100%;
+        }
+
+        #p6 {
+            background: silver url("../img/football.png") no-repeat 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS属性background的应用</h3>
+    <div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <p id="p6"></p>
+
+</body>
+
+</html>
