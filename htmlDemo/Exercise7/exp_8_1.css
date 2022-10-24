@@ -1,3 +1,20 @@
+#div1 {
+    width: 600px;
+    height: 380px;
+    background-color: rgb(145, 221, 235);
+}
+
+#div2 {
+    font-family: "幼圆";
+    font-size: 20px;
+}
+
+.a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(0, 170, 255);
+}
+
 .it {
     font-style: italic;
     font-size: 24px;
