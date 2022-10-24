@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行元素和块元素相互转化</title>
+    <style type="text/css">
+        div {
+            background-color: #C5CAE9;
+            color: #3949AB;
+            height: 2em;
+            margin: 2px;
+        }
+
+        .inline_disp {
+            display: inline;
+        }
+
+        .block_disp {
+            display: block;
+            height: 4em;
+            background-color: rgb(200, 200, 200);
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">这是div1</div>
+    <div id="d2">这是div2</div>
+    <span id="s1">这是span1</span>
+    <span id="s2">这是span2</span>
+    <div id="d3" class="inline_disp">这是转行内元素的div3</div>
+    <div id="d4" class="inline_disp">这是转行内元素的div4</div>
+    <span id="s3" class="block_disp">这是转块级元素的span3</span>
+    <span id="s4" class="block_disp">这是转块级元素的span4</span>
+</body>
+
+</html>
