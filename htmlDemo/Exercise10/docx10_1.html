@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div层叠</title>
+    <style>
+        body {
+            margin: 0
+        }
+
+        div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+
+        #d1 {
+            z-index: 0;
+        }
+
+        #d2 {
+            z-index: 1;
+            left: 80px;
+        }
+
+        #d3 {
+            z-index: 3;
+            left: 160px;
+        }
+
+        #d4 {
+            z-index: 4;
+            left: 240px;
+        }
+
+        #d5 {
+            z-index: 5;
+            left: 320px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        <img src="../img/ten.jpg" alt="10">
+    </div>
+    <div id="d2">
+        <img src="../img/jack.jpg" alt="J">
+    </div>
+    <div id="d3">
+        <img src="../img/queen.jpg" alt="Q">
+    </div>
+    <div id="d4">
+        <img src="../img/king.jpg" alt="K">
+    </div>
+    <div id="d5">
+        <img src="../img/ace.jpg" alt="A">
+    </div>
+
+</body>
+
+</html>
