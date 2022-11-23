@@ -72,13 +72,14 @@ p {
 }
 
 span {
-    margin-top: 45px;
-    width: 50px;
+    margin-top: 5px;
+    width: 57px;
     height: 30px;
     font-size: 20px;
     padding: 45px 10px;
     vertical-align: middle;
     text-align: center;
+    line-height: 120px;
 }
 
 a {

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 3D Transition动画设置持续时间</title>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background: red;
+				
+                /*设置渐变属性*/
+                transition-property:all;				 
+                /*设置持续时间*/
+                transition-duration: 5s;
+                /* 以慢速开始的过渡效果 */
+                transition-timing-function: ease-in;
+                /* 复合写法 */
+                /* 一般顺序[transition-property] [transition-duration] [transition-timing-function] [transition-delay] */
+
+                /* transition: all 8s ease-in; */
+            }
+            div:hover {
+                background-color: blue;
+                width: 150px;
+                height: 200px;
+            }
+            p{
+                transition-duration: 10s;
+                transition-delay: 2s;
+            }
+            p:hover{
+                background-color: brown;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>CSS3 3D Transition动画设置持续时间</h3>
+        <hr>
+        <div></div>
+        <p>CSS3 3D Transition动画设置持续时间</p>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+        <title>CSS3 2D翻转效果</title>
+        <style>
+            div {
+                width: 50px;
+                height: 40px;
+                margin: 10px 30px;
+                border: 1px solid;
+                display: inline-block;
+                text-align: center;
+                padding: 20px;
+            }
+
+            /* skew() */
+            div.style1 {
+                transform: skew(40deg,10deg);
+            }
+            /* skewX() */
+            div.style2 {
+                transform: skewX(30deg);
+            }
+            /* skewY() */
+            div.style3 {
+                transform: skewY(30deg);
+            }
+        </style>
+    </head>
+    <body>
+        <h3>CSS3 2D翻转效果</h3>
+        <h4>参照系没有移动</h4>
+        <div>原图</div>
+        <div>变化后</div>
+        <hr>
+        <h4>x轴方向倾斜40度，y轴方向倾斜10度</h4>
+        <div>原图</div>
+        <div class="style1">变化后</div>
+        <hr>
+        <h4>x轴方向倾斜30度</h4>
+        <div>原图</div>
+        <div class="style2">变化后</div>
+        <hr>
+        <h4>y轴方向倾斜30度</h4>
+        <div>原图</div>
+        <div class="style3">变化后</div>
+    </body>
+</html>

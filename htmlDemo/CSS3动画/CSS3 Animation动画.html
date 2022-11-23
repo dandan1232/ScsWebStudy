@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 3D Animation动画效果</title>
+        <style>
+            div {
+                height: 100px;
+                background: red;
+                animation: rainbow 10s;
+                /* 循环的次数，默认1次 */
+                animation-iteration-count:2;
+
+            }
+            @keyframes rainbow{
+            0%{background-color:red;}
+            20%{background-color:orange;}
+            40%{background-color:yellow;}
+            60%{background-color:green;}
+            80%{background-color:blue;}
+            100%{background-color:purple;}
+            }
+            div:hover{
+                /* 动画暂停状态 */
+                animation-play-state: paused;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>CSS3 Animation动画效果</h3>
+        <div></div>
+    </body>
+</html>
