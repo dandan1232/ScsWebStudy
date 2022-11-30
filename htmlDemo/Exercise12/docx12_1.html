@@ -6,39 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>计算部分∑N！的和</title>
+    <style>
+        div {
+            background-color: black;
+            width: 500px;
+            height: 250px;
+            margin: 40px auto;
+            border-style: ridge;
+            border-width: 15px;
+            border-color: #7986CB;
+        }
+
+        form {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
+        }
+
+        #sum {
+            margin-left: -100px;
+            /* margin-top: 30px; */
+            height: 40px;
+            width: 100px;
+        }
+
+        #reset {
+            margin-left: 30px;
+            height: 40px;
+            width: 100px;
+        }
+    </style>
 </head>
 
 <body>
-    <h3>计算∑N!</h3>
-    <form>
-        <strong>输入整数N的值:&nbsp;&nbsp;</strong><input type="text" name="num"> <br>
-        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∑N！= :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-        <input type="text" name="num"><br>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <input type="button" name="sum" onclick="sum(i)" value="求和">
-        <input type="button" name="clear" onclick="clear" value="清空">
-    </form>
+    <div>
+
+
+        <h3>计算∑N!</h3>
+        <form>
+            <strong>输入整数N的值:&nbsp;&nbsp;</strong><input type="text" id="shuru" cname="num"> <br>
+            <br>
+            <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∑N！= :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+            <input type="text" name="num" id="result"><br>
+            <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="button" name="submit" onclick="sum()" value="求和" id="sum">
+            <input type="reset" name="reset" onclick="reset" value="清空" id="reset">
+        </form>
+    </div>
 
     <script type="text/javascript">
-        function sum (i) {
-            var sum = document.getElementByName("sum").value
+        function sum () {
+            var n = document.getElementById("shuru").value
+            console.log(document.getElementById("shuru"))
             for (i = 1, sum = 0; i <= n; i++) {
-                // if (i > 15) {
-                //     break
-                // }
-                // if (i >= 1) {
-                //     continue
-                // } else {
                 for (j = 1, cj = 1; j <= i; j++) {
                     cj = cj * j
                 }
 
-                document.write(i + "!=" + cj + "<br/>")
+                console.log(i + "!=" + cj + "<br/>")
                 sum = sum + cj
             }
             i = i - 1
-            document.write("∑" + i + "!=" + sum)
+            console.log("∑" + i + "!=" + sum)
+            document.getElementById("result").value = sum
         }
+
 
         // document.write("计算部分∑N！的和<br/>")
         // var n = prompt("请输入整数N的值:")
