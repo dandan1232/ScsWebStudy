@@ -1,41 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script>
+        function checkAll () {
+            //1.获取编号前面的复选框
+            var checkAllEle = document.getElementById("checkAll")
+            //2.对编号前面复选框的状态进行判断
+            if (checkAllEle.checked == true) {
+                //3.获取下面所有的复选框
+                var checkOnes = document.getElementsByName("checkOne")
+                //4.对获取的所有复选框进行遍历
+                for (var i = 0; i < checkOnes.length; i++) {
+                    //5.拿到每一个复选框，并将其状态置为选中
+                    checkOnes[i].checked = true
+                }
+            } else {
+                //6.获取下面所有的复选框
+                var checkOnes = document.getElementsByName("checkOne")
+                //7.对获取的所有复选框进行遍历
+                for (var i = 0; i < checkOnes.length; i++) {
+                    //8.拿到每一个复选框，并将其状态置为未选中
+                    checkOnes[i].checked = false
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <div id="app">
-        <p>加法</p>
-        <input type="text" value="" v-model="s1">
-        <input type="text" value="" v-model="s2">
-        <input type="button" value="结果" @click="add">
-        <input type="text" v-model="rs">
-        <!--v-model="add()" -->
-    </div>
-    <script src="./vue.js"></script>//引入vue
-    <script>
-        var vm = new Vue({
-            el: "#app",
-            data: {
-                s1: 0,
-                s2: 0,
-                rs: 0
-
-            },
-            methods: {
-                add: function () {
-                    //this.rs这个可以把答案填写在input的输入框中
-                    this.rs = parseFloat(this.s1) + parseFloat(this.s2)
-                }
-            }
-        })
-    </script>
-
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">
+                    <input type="checkbox" id="checkAll" onclick="checkAll()" />
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="checkOne"></td>
+                <td>xx1</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkOne"></td>
+                <td>xx2</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkOne"></td>
+                <td>xx3</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkOne"></td>
+                <td>xx4</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>

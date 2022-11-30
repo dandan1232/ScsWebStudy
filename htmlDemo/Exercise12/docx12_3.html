@@ -7,19 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>全选</title>
     <style type="text/css">
+        body {
+            margin: 30px 40%;
+        }
 
+        .title {
+            background-color: #2196F3;
+        }
+
+        table {
+            border: solid 1px;
+            width: 400px;
+            height: 120px;
+        }
     </style>
 
-    <script type="text/javascript">
 
-    </script>
 </head>
 
 <body>
-    <table border="1" width="400px" height="120px">
-        <tr>
+    <table>
+        <tr class="title">
             <th>
-
+                <input type="checkbox" id="chooseAll" value="复选框">
             </th>
             <th>菜名</th>
             <th>饭店</th>
@@ -27,9 +37,7 @@
 
         <tr>
             <th>
-                <form>
-
-                </form>
+                <input type="checkbox" name="choose" value="复选框">
             </th>
             <th>红烧肉</th>
             <th>一食堂</th>
@@ -37,7 +45,7 @@
 
         <tr>
             <th>
-
+                <input type="checkbox" name="choose" value="复选框">
             </th>
             <th>西红柿鸡蛋</th>
             <th>一食堂</th>
@@ -45,7 +53,7 @@
 
         <tr>
             <th>
-
+                <input type="checkbox" name="choose" value="复选框">
             </th>
             <th>油炸榴莲</th>
             <th>一食堂</th>
@@ -53,7 +61,26 @@
 
     </table>
 
+    <script type="text/javascript">
+        window.onload = function () {
+            //获取所有复选框对象，返回一个数组
+            var Choose = document.getElementsByName("choose")
+            //获取全选框对象
+            var ChooseAll = document.getElementById("chooseAll")
+            //当点击全选框时，将全选框的checked值赋给所有复选框对象的checked
+            chooseAll.onclick = function chooseAll () {
+                //遍历所有复选框对象
+                for (var i = 0; i < Choose.length; i++) {
+                    Choose[i].checked = ChooseAll.checked
+                }
+            }
+            // Choose.onclick = function () {
+            //     var ChooseAll = document.getElementById("chooseAll")
+            // }
 
+        }
+
+    </script>
 </body>
 
 </html>
