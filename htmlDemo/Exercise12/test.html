@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <p>加法</p>
+        <input type="text" value="" v-model="s1">
+        <input type="text" value="" v-model="s2">
+        <input type="button" value="结果" @click="add">
+        <input type="text" v-model="rs">
+        <!--v-model="add()" -->
+    </div>
+    <script src="./vue.js"></script>//引入vue
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                s1: 0,
+                s2: 0,
+                rs: 0
+
+            },
+            methods: {
+                add: function () {
+                    //this.rs这个可以把答案填写在input的输入框中
+                    this.rs = parseFloat(this.s1) + parseFloat(this.s2)
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

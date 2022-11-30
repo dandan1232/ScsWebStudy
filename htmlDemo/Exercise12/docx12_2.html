@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>列表框图像浏览器</title>
+    <style type="text/css">
+        body {
+            margin: 30px auto 30px auto;
+            width: 400px;
+            height: 400px;
+            border: 1px solid;
+        }
+
+        img {
+            width: 270px;
+            height: 270px;
+        }
+    </style>
+    <script language="javascript">
+        function $ (id) { return document.getElementById(id) }     //获取元素
+        function showImg () {
+            var index = $("sel").selectedIndex             //获取下拉框中选择项
+            $("show").src = $("sel").options[index].value  //更改图片
+        }
+    </script>
+
+</head>
+
+<body>
+    <p align="center"><img src="img/img1.jpg" id="show" width="200px"></p>
+    <div align="center">
+        <form>
+            <strong>列表框图像浏览器</strong>
+            <select id="sel" onChange="showImg()">
+                <option value="img/img1.jpg">选择图像</option>
+                <option value="img/img2.jpg">卡通图片1</option>
+                <option value="img/img3.jpg">卡通图片2</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>
