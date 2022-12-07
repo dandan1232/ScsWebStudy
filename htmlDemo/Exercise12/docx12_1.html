@@ -28,14 +28,14 @@
             text-align: center;
         }
 
-        #sum {
+        .acc {
             margin-left: -100px;
             /* margin-top: 30px; */
             height: 40px;
             width: 100px;
         }
 
-        #reset {
+        .reset {
             margin-left: 30px;
             height: 40px;
             width: 100px;
@@ -46,22 +46,23 @@
 <body>
     <div>
 
+        <form action="">
+            <h3>计算∑N!</h3>
 
-        <h3>计算∑N!</h3>
-        <form>
-            <strong>输入整数N的值:&nbsp;&nbsp;</strong><input type="text" id="shuru" cname="num"> <br>
+            <strong>输入整数N的值:&nbsp;&nbsp;</strong>
+            <input type="text" id="shuru"> <br>
             <br>
             <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∑N！= :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-            <input type="text" name="num" id="result"><br>
+            <input type="text" id="result"><br>
             <br>
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <input type="button" name="submit" onclick="sum()" value="求和" id="sum">
-            <input type="reset" name="reset" onclick="reset" value="清空" id="reset">
+            <input type="button" class="acc" onclick="acc()" value="计算∑N">
+            <input type="reset" onclick=" reset" value="清空" class="reset">
         </form>
     </div>
 
-    <script type="text/javascript">
-        function sum () {
+    <script>
+        function acc () {
             var n = document.getElementById("shuru").value
             console.log(document.getElementById("shuru"))
             for (i = 1, sum = 0; i <= n; i++) {
