@@ -59,36 +59,12 @@
             <th>一食堂</th>
         </tr>
 
-        <tr>
-            <th>
-                <button onclick="delete_choose()">删除</button>
-            </th>
-        </tr>
-
     </table>
 
     <script type="text/javascript">
         window.onload = function () {
             //获取所有复选框对象，返回一个数组
             var Choose = document.getElementsByName("choose")
-            for (var i = 0; i < Choose.length; i++) {
-                Choose[i].onclick = function () {
-                    //将chooseAll设置为选中状态
-                    chooseAll.checked = true
-                    for (var j = 0; j < Choose.length; j++) {
-                        //判断四个多选框是否全选
-                        //只要有一个没选中则就不是全选
-                        if (!Choose[j].checked) {
-                            //一旦进入判断，则证明不是全选状态
-                            //将chooseAll设置为没选中状态
-                            chooseAll.checked = false
-                            //一旦进入判断，则已经得出结果，不用再继续执行循环
-                            break
-                        }
-
-                    }
-                }
-            }
             //获取全选框对象
             var ChooseAll = document.getElementById("chooseAll")
             //当点击全选框时，将全选框的checked值赋给所有复选框对象的checked
@@ -98,22 +74,11 @@
                     Choose[i].checked = ChooseAll.checked
                 }
             }
-
-
-        }
-        function delete_choose () {
-            const Choose = document.getElementsByName("choose")
-            for (var i = Choose.length - 1; i >= 0; i--) {
-                if (Choose[i].checked) {
-                    Choose[i].parentNode.parentNode.parentNode.removeChild(Choose[i].parentNode.parentNode)
-                    // ChooseAll.checked = false
-
-                }
-            }
+            // Choose.onclick = function () {
+            //     var ChooseAll = document.getElementById("chooseAll")
+            // }
 
         }
-
-
 
     </script>
 </body>
