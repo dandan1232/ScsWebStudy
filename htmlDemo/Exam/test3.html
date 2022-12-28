@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <p>我是第一个p标签</p>
+        <p>我是第二个p标签</p>
+        <p>我是第三个p标签</p>
+        <input type="button" value="设置p的内容" onclick="change()" />
+    </body>
+
+
+    <script>
+        function change () {
+            // 获取p标签的引用
+            var p1 = document.querySelector("p:nth-of-type(1)")
+            var p2 = document.querySelector("p:nth-of-type(2)")
+            var p3 = document.querySelector("p:nth-of-type(3)")
+
+            // 修改p标签的内容
+            p1.innerHTML = "改变p标签"
+
+            // 居中第二个p标签
+            p2.style.textAlign = "center"
+
+            // 修改第三个p标签的背景颜色
+            p3.style.backgroundColor = "red"
+        }
+
+        emp = new Array[3];
+
+    </script>
+</body>
+
+</html>
